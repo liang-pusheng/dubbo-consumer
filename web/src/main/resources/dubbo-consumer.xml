@@ -8,7 +8,9 @@
     <dubbo:application name="dubbo-consumer"/>
 
     <!-- 在注册中心暴露发现服务地址 -->
-    <dubbo:registry address="zookeeper://47.102.157.129"/>
+    <dubbo:registry address="zookeeper://47.102.157.129:2git181"/>
+
+    <dubbo:protocol name="dubbo" port="20880"/>
 
     <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
     <dubbo:reference id="goodService" interface="com.liangpusheng.service.GoodService"/>
